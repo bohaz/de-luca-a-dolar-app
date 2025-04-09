@@ -17,7 +17,7 @@ export default function ConvertButton({ onPress }) {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: '#10b981',
+    backgroundColor: '#002f6c',
     padding: 12,
     borderRadius: 8,
     alignItems: 'center',

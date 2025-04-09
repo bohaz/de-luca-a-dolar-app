@@ -48,8 +48,8 @@ export default function HistorialScreen() {
             propsForDots: {
               r: '3',
               strokeWidth: '2',
-              stroke: '#10b981',
-              fill: '#10b981',
+              stroke: '#002f6c',
+              fill: '#002f6c',
             },
             propsForBackgroundLines: {
               strokeDasharray: '',

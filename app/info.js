@@ -43,6 +43,6 @@ const styles = StyleSheet.create({
   },
   link: {
     fontWeight: 'bold',
-    color: '#10b981',
+    color: '#002f6c',
   },
 });

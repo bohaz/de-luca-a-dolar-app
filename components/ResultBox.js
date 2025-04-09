@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   container: { alignItems: 'center', marginTop: 20 },
   result: {
     fontSize: 24,
-    color: '#065f46',
+    color: '#002f6c',
     fontWeight: 'bold',
     backgroundColor: '#d1fae5',
     padding: 10,
