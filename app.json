@@ -31,9 +31,19 @@
     "plugins": [
       "expo-router"
     ],
-    "assetBundlePatterns": ["**/*"], 
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "updates": {
       "fallbackToCacheTimeout": 0
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9fdd6956-a0b1-4866-82c1-e575bd9f0c43"
+      }
     }
   }
 }
