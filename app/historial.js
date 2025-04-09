@@ -26,17 +26,16 @@ export default function HistorialScreen() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-
       {valores.length > 0 && (
         <LineChart
           data={{
             labels: fechas,
             datasets: [{ data: valores }],
           }}
-          width={Dimensions.get('window').width - 40}
+          width={Dimensions.get('window').width - 60} 
           height={250}
           yAxisSuffix=" CLP"
-          fromZero={true}
+          fromZero
           chartConfig={{
             backgroundColor: '#f3f4f6',
             backgroundGradientFrom: '#f3f4f6',
@@ -55,23 +54,20 @@ export default function HistorialScreen() {
               strokeDasharray: '',
               stroke: '#e5e7eb',
             },
-            style: {
-              borderRadius: 16,
-            },
           }}
           bezier
           style={styles.chart}
         />
-      
       )}
     </ScrollView>
+
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    padding: 20,
+    padding: 24,
     alignItems: 'center', 
   },
   
