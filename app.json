@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "de-luca-a-dolar-app",
+    "name": "De Luca a Dólar",
     "slug": "de-luca-a-dolar-app",
+    "description": "Convierte pesos chilenos a dólares en tiempo real",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,6 +24,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
