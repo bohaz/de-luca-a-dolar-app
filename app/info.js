@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Linking } from 'react-native';
 
 export default function InfoScreen() {
   return (
@@ -15,8 +15,20 @@ export default function InfoScreen() {
       </Text>
 
       <Text style={styles.text}>
-        Si deseas conocer más sobre el funcionamiento del mercado cambiario, te recomendamos visitar sitios oficiales como el Banco Central de Chile.
+        Ten en cuenta que este valor puede diferir del tipo de cambio mostrado en buscadores como Google, ya que ellos reflejan el mercado internacional en tiempo real. Nosotros usamos el{' '}
+        <Text style={styles.bold}>dólar observado</Text>, publicado por el Banco Central de Chile y actualizado diariamente.
       </Text>
+
+      <Text style={styles.text}>
+        Para conocer más, puedes visitar sitios oficiales como el{' '}
+        <Text
+          style={styles.link}
+          onPress={() => Linking.openURL('https://www.bcentral.cl')}
+        >
+          Banco Central de Chile
+        </Text>.
+      </Text>
+
     </ScrollView>
   );
 }
@@ -25,21 +37,21 @@ const styles = StyleSheet.create({
   container: {
     padding: 24,
     flexGrow: 1,
-    
     backgroundColor: '#f3f4f6',
-  },
-  title: {
-    fontSize: 26,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginBottom: 20,
-    color: '#111827',
   },
   text: {
     fontSize: 16,
     lineHeight: 24,
     marginBottom: 16,
     color: '#374151',
+    backgroundColor: '#fff', 
+    borderWidth: 1, 
+    borderColor: '#e5e7eb',
+    padding: 16, 
+    borderRadius: 8,
+  },
+  bold: {
+    fontWeight: 'bold',
   },
   link: {
     fontWeight: 'bold',
