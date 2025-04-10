@@ -10,7 +10,7 @@ export default function Layout() {
           headerTitleStyle: {
             fontSize: 20,
             fontWeight: 'bold',
-            color: '#111827',
+            color: '#002f6c',
           },
           tabBarShowLabel: false,
           tabBarActiveTintColor: '#002f6c',
@@ -44,7 +44,7 @@ export default function Layout() {
           }}
         />
       </Tabs>
-      <Toast /> {/* 👈 agrega esto */}
+      <Toast /> 
     </>
   );
 }
