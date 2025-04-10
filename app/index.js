@@ -13,11 +13,21 @@ export default function Index() {
   const [fecha, setFecha] = useState('');
 
   const formatearCLP = (valor) => {
+    if (valor === '') {
+      setClp('');
+      setClpRaw('');
+      setUsd(null);
+      setFecha('');
+      return;
+    }
+  
     const limpio = valor.replace(/\D/g, '');
     setClpRaw(limpio);
+  
     const formateado = new Intl.NumberFormat('es-CL').format(limpio);
     setClp(formateado);
   };
+  
 
   const convertir = async () => {
     if (!clpRaw || isNaN(clpRaw) || parseFloat(clpRaw) === 0) {
